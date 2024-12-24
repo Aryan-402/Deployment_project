@@ -18,18 +18,19 @@ pipeline {
             }
         }
         stage('Deploy') {
-            steps {
-                // Deploy to Tomcat server
-                sh '''
-                cp target/your-app.war /Applications/apache-tomcat-9.0.95/webapps
-                '''
-                // Restart Tomcat server (if needed)
-                sh '''
-                /Applications/apache-tomcat-9.0.95/bin/shutdown.sh
-                /Applications/apache-tomcat-9.0.95/bin/startup.sh
-                '''
-            }
-        }
+    steps {
+        // Deploy to Tomcat server
+        sh '''
+        cp target/UserAuthWeb-1.0-SNAPSHOT.war /Applications/apache-tomcat-9.0.95/webapps
+        '''
+        // Restart Tomcat server (if needed)
+        sh '''
+        /Applications/apache-tomcat-9.0.95/bin/shutdown.sh
+        /Applications/apache-tomcat-9.0.95/bin/startup.sh
+        '''
+    }
+}
+
     }
     post {
         success {
