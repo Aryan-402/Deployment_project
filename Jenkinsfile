@@ -1,5 +1,9 @@
 pipeline {
     agent any
+    environment {
+        MAVEN_HOME = '/usr/local/opt/maven/libexec'  // Update this path
+        PATH = "${MAVEN_HOME}/bin:${env.PATH}"
+    }
     stages {
         stage('Checkout') {
             steps {
@@ -9,7 +13,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                // Optional: Use Maven to package the project if required
+                // Use Maven to package the project
                 sh 'mvn clean package'
             }
         }
@@ -36,4 +40,3 @@ pipeline {
         }
     }
 }
-
