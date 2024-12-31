@@ -3,6 +3,8 @@
     <test name="MyTests">
         <classes>
             <class name="com.aryan.DatabaseConnectionTest" />
+            <class name="com.aryan.LoginServletTest" />
+            <class name="com.aryan.SignupServletTest" />
             <!-- Add more test classes here -->
         </classes>
     </test>
