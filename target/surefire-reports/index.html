@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-MySuite" class="navigator-link">
-              <span class="suite-name border-failed">MySuite</span>
+              <span class="suite-name border-passed">MySuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,31 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 3 failed,   1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-MySuite" class="hide-methods failed suite-MySuite"> (hide)</a> <!-- hide-methods failed suite-MySuite -->
-                      <a href="#" panel-name="suite-MySuite" class="show-methods failed suite-MySuite"> (show)</a> <!-- show-methods failed suite-MySuite -->
-                    </span>
-                    <div class="method-list-content failed suite-MySuite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MySuite" title="com.aryan.SignupServletTest" class="method navigator-link" hash-for-method="testDuplicateUserSignup">testDuplicateUserSignup</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MySuite" title="com.aryan.LoginServletTest" class="method navigator-link" hash-for-method="testValidLogin">testValidLogin</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MySuite" title="com.aryan.SignupServletTest" class="method navigator-link" hash-for-method="testValidSignup">testValidSignup</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-MySuite -->
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -128,6 +104,16 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-MySuite" title="com.aryan.DatabaseConnectionTest" class="method navigator-link" hash-for-method="testDatabaseConnection">testDatabaseConnection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MySuite" title="com.aryan.LoginServletTest" class="method navigator-link" hash-for-method="testLoginSuccess">testLoginSuccess</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MySuite" title="com.aryan.SignupServletTest" class="method navigator-link" hash-for-method="testSignup">testSignup</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-MySuite -->
@@ -142,150 +128,21 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-MySuite" class="panel MySuite">
-          <div class="suite-MySuite-class-failed">
+          <div class="suite-MySuite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">com.aryan.SignupServletTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testDuplicateUserSignup">
-                  </a> <!-- testDuplicateUserSignup -->
-                  <span class="method-name">testDuplicateUserSignup</span>
-                  <div class="stack-trace">Wanted but not invoked:
-httpServletRequest.setAttribute(
-    &quot;errorMessage&quot;,
-    &quot;Username or email already exists.&quot;
-);
--&gt; at com.aryan.SignupServletTest.testDuplicateUserSignup(SignupServletTest.java:55)
-
-However, there were exactly 4 interactions with this mock:
-httpServletRequest.getParameter(&quot;username&quot;);
--&gt; at com.aryan.SignupServlet.doPost(SignupServlet.java:18)
-
-httpServletRequest.getParameter(&quot;email&quot;);
--&gt; at com.aryan.SignupServlet.doPost(SignupServlet.java:19)
-
-httpServletRequest.getParameter(&quot;password&quot;);
--&gt; at com.aryan.SignupServlet.doPost(SignupServlet.java:20)
-
-httpServletRequest.getContextPath();
--&gt; at com.aryan.SignupServlet.doPost(SignupServlet.java:32)
-
-
-	at com.aryan.SignupServletTest.testDuplicateUserSignup(SignupServletTest.java:55)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 29 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testValidSignup">
-                  </a> <!-- testValidSignup -->
-                  <span class="method-name">testValidSignup</span>
-                  <div class="stack-trace">org.mockito.exceptions.verification.ArgumentsAreDifferent: Argument(s) are different! Wanted:
-httpServletResponse.sendRedirect(
-    &quot;/login.jsp&quot;
-);
--&gt; at com.aryan.SignupServletTest.testValidSignup(SignupServletTest.java:35)
-Actual invocations have different arguments:
-httpServletResponse.sendRedirect(
-    &quot;null/login.jsp&quot;
-);
--&gt; at com.aryan.SignupServlet.doPost(SignupServlet.java:32)
-
-	at com.aryan.SignupServletTest.testValidSignup(SignupServletTest.java:35)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 29 stack frames
-</div> <!-- stack-trace -->
+                  <a name="testSignup">
+                  </a> <!-- testSignup -->
+                  <span class="method-name">testSignup</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-MySuite-class-failed -->
-          <div class="suite-MySuite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.aryan.LoginServletTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testValidLogin">
-                  </a> <!-- testValidLogin -->
-                  <span class="method-name">testValidLogin</span>
-                  <div class="stack-trace">org.mockito.exceptions.base.MockitoException: 
-Mockito cannot mock this class: interface java.sql.Connection.
-
-If you&apos;re not sure why you&apos;re getting this error, please open an issue on GitHub.
-
-
-Java               : 23
-JVM vendor name    : Oracle Corporation
-JVM vendor version : 23+37-2369
-JVM name           : Java HotSpot(TM) 64-Bit Server VM
-JVM version        : 23+37-2369
-JVM info           : mixed mode, sharing
-OS name            : Mac OS X
-OS version         : 15.2
-
-
-You are seeing this disclaimer because Mockito is configured to create inlined mocks.
-You can learn about inline mocks and their limitations under item #39 of the Mockito class javadoc.
-
-Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [interface java.sql.Connection, interface java.sql.Wrapper, interface java.lang.AutoCloseable]
-	at com.aryan.LoginServletTest.testValidLogin(LoginServletTest.java:28)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-Caused by: org.mockito.exceptions.base.MockitoException: Could not modify all classes [interface java.sql.Connection, interface java.sql.Wrapper, interface java.lang.AutoCloseable]
-	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:168)
-	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:399)
-	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:190)
-	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:410)
-	... 31 more
-Caused by: java.lang.IllegalStateException: 
-Byte Buddy could not instrument all classes within the mock&apos;s type hierarchy
-
-This problem should never occur for javac-compiled classes. This problem has been observed for classes that are:
- - Compiled by older versions of scalac
- - Classes that are part of the Android distribution
-	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.triggerRetransformation(InlineBytecodeGenerator.java:285)
-	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.mockClass(InlineBytecodeGenerator.java:218)
-	at org.mockito.internal.creation.bytebuddy.TypeCachingBytecodeGenerator.lambda$mockClass$0(TypeCachingBytecodeGenerator.java:78)
-	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:168)
-	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:399)
-	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:190)
-	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:410)
-	at org.mockito.internal.creation.bytebuddy.TypeCachingBytecodeGenerator.mockClass(TypeCachingBytecodeGenerator.java:75)
-	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.createMockType(InlineDelegateByteBuddyMockMaker.java:396)
-	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.doCreateMock(InlineDelegateByteBuddyMockMaker.java:355)
-	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.createMock(InlineDelegateByteBuddyMockMaker.java:334)
-	at org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.createMock(InlineByteBuddyMockMaker.java:56)
-	at org.mockito.internal.util.MockUtil.createMock(MockUtil.java:99)
-	at org.mockito.internal.MockitoCore.mock(MockitoCore.java:88)
-	at org.mockito.Mockito.mock(Mockito.java:2101)
-	at org.mockito.Mockito.mock(Mockito.java:2016)
-	... 31 more
-Caused by: java.lang.IllegalArgumentException: Java 23 (67) is not supported by the current version of Byte Buddy which officially supports Java 21 (65) - update Byte Buddy or set net.bytebuddy.experimental as a VM property
-	at net.bytebuddy.utility.OpenedClassReader.of(OpenedClassReader.java:96)
-	at net.bytebuddy.dynamic.scaffold.TypeWriter$Default$ForInlining.create(TypeWriter.java:4011)
-	at net.bytebuddy.dynamic.scaffold.TypeWriter$Default.make(TypeWriter.java:2224)
-	at net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase$UsingTypeWriter.make(DynamicType.java:4055)
-	at net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase.make(DynamicType.java:3739)
-	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.transform(InlineBytecodeGenerator.java:402)
-	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:242)
-	at java.instrument/sun.instrument.TransformerManager.transform(TransformerManager.java:188)
-	at java.instrument/sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:610)
-	at java.instrument/sun.instrument.InstrumentationImpl.retransformClasses0(Native Method)
-	at java.instrument/sun.instrument.InstrumentationImpl.retransformClasses(InstrumentationImpl.java:225)
-	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.triggerRetransformation(InlineBytecodeGenerator.java:281)
-	... 46 more
-... Removed 29 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-MySuite-class-failed -->
+          </div> <!-- suite-MySuite-class-passed -->
           <div class="suite-MySuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -297,6 +154,21 @@ Caused by: java.lang.IllegalArgumentException: Java 23 (67) is not supported by 
                   <a name="testDatabaseConnection">
                   </a> <!-- testDatabaseConnection -->
                   <span class="method-name">testDatabaseConnection</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MySuite-class-passed -->
+          <div class="suite-MySuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.aryan.LoginServletTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginSuccess">
+                  </a> <!-- testLoginSuccess -->
+                  <span class="method-name">testLoginSuccess</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -314,8 +186,8 @@ Caused by: java.lang.IllegalArgumentException: Java 23 (67) is not supported by 
   &lt;test thread-count=&quot;5&quot; name=&quot;MyTests&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.aryan.DatabaseConnectionTest&quot;/&gt;
-      &lt;class name=&quot;com.aryan.LoginServletTest&quot;/&gt;
       &lt;class name=&quot;com.aryan.SignupServletTest&quot;/&gt;
+      &lt;class name=&quot;com.aryan.LoginServletTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- MyTests --&gt;
 &lt;/suite&gt; &lt;!-- MySuite --&gt;
@@ -355,28 +227,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testDatabaseConnection')
-data.setCell(0, 2, 'com.aryan.DatabaseConnectionTest')
-data.setCell(0, 3, 360);
+data.setCell(0, 1, 'testSignup')
+data.setCell(0, 2, 'com.aryan.SignupServletTest')
+data.setCell(0, 3, 1669);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testValidLogin')
-data.setCell(1, 2, 'com.aryan.LoginServletTest')
-data.setCell(1, 3, 318);
+data.setCell(1, 1, 'testDatabaseConnection')
+data.setCell(1, 2, 'com.aryan.DatabaseConnectionTest')
+data.setCell(1, 3, 457);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testDuplicateUserSignup')
-data.setCell(2, 2, 'com.aryan.SignupServletTest')
-data.setCell(2, 3, 52);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testValidSignup')
-data.setCell(3, 2, 'com.aryan.SignupServletTest')
-data.setCell(3, 3, 25);
+data.setCell(2, 1, 'testLoginSuccess')
+data.setCell(2, 2, 'com.aryan.LoginServletTest')
+data.setCell(2, 3, 162);
 window.suiteTableData['MySuite']= { tableData: data, tableDiv: 'times-div-MySuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 755 ms</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-MySuite">
               </div> <!-- times-div-MySuite -->
             </div> <!-- times-div -->
@@ -409,35 +277,17 @@ return data;
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.aryan.LoginServletTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.aryan.SignupServletTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">testValidLogin</span>
-                <span class="method-start">362 ms</span>
+                <span class="method-name">testSignup</span>
+                <span class="method-start">461 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.aryan.SignupServletTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">685 ms</span>
-              </div> <!-- configuration-method before -->
+              <div class="chronological-class-name">com.aryan.LoginServletTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">testDuplicateUserSignup</span>
-                <span class="method-start">691 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">745 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">testValidSignup</span>
-                <span class="method-start">745 ms</span>
+                <span class="method-name">testLoginSuccess</span>
+                <span class="method-start">2133 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

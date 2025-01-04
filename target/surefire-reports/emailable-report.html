@@ -9,114 +9,12 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">MySuite</th></tr>
-<tr><td><a href="#t0">MyTests</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">792</td><td></td><td></td></tr>
+<tr><td><a href="#t0">MyTests</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">2,333</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">MySuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">MyTests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.aryan.LoginServletTest</td><td><a href="#m0">testValidLogin</a></td><td rowspan="1">1735590352572</td><td rowspan="1">318</td></tr><tr class="failedodd"><td rowspan="2">com.aryan.SignupServletTest</td><td><a href="#m1">testDuplicateUserSignup</a></td><td rowspan="1">1735590352901</td><td rowspan="1">52</td></tr><tr class="failedodd"><td><a href="#m2">testValidSignup</a></td><td rowspan="1">1735590352955</td><td rowspan="1">25</td></tr><tr><th colspan="4">MyTests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.aryan.DatabaseConnectionTest</td><td><a href="#m3">testDatabaseConnection</a></td><td rowspan="1">1735590352210</td><td rowspan="1">360</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">MySuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">MyTests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.aryan.DatabaseConnectionTest</td><td><a href="#m0">testDatabaseConnection</a></td><td rowspan="1">1735929126512</td><td rowspan="1">457</td></tr><tr class="passedodd"><td rowspan="1">com.aryan.LoginServletTest</td><td><a href="#m1">testLoginSuccess</a></td><td rowspan="1">1735929128645</td><td rowspan="1">162</td></tr><tr class="passedeven"><td rowspan="1">com.aryan.SignupServletTest</td><td><a href="#m2">testSignup</a></td><td rowspan="1">1735929126973</td><td rowspan="1">1669</td></tr></tbody>
 </table>
-<h2>MyTests</h2><h3 id="m0">com.aryan.LoginServletTest#testValidLogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.mockito.exceptions.base.MockitoException: 
-Mockito cannot mock this class: interface java.sql.Connection.
-
-If you&apos;re not sure why you&apos;re getting this error, please open an issue on GitHub.
-
-
-Java               : 23
-JVM vendor name    : Oracle Corporation
-JVM vendor version : 23+37-2369
-JVM name           : Java HotSpot(TM) 64-Bit Server VM
-JVM version        : 23+37-2369
-JVM info           : mixed mode, sharing
-OS name            : Mac OS X
-OS version         : 15.2
-
-
-You are seeing this disclaimer because Mockito is configured to create inlined mocks.
-You can learn about inline mocks and their limitations under item #39 of the Mockito class javadoc.
-
-Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [interface java.sql.Connection, interface java.sql.Wrapper, interface java.lang.AutoCloseable]
-	at com.aryan.LoginServletTest.testValidLogin(LoginServletTest.java:28)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-Caused by: org.mockito.exceptions.base.MockitoException: Could not modify all classes [interface java.sql.Connection, interface java.sql.Wrapper, interface java.lang.AutoCloseable]
-	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:168)
-	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:399)
-	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:190)
-	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:410)
-	... 31 more
-Caused by: java.lang.IllegalStateException: 
-Byte Buddy could not instrument all classes within the mock&apos;s type hierarchy
-
-This problem should never occur for javac-compiled classes. This problem has been observed for classes that are:
- - Compiled by older versions of scalac
- - Classes that are part of the Android distribution
-	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.triggerRetransformation(InlineBytecodeGenerator.java:285)
-	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.mockClass(InlineBytecodeGenerator.java:218)
-	at org.mockito.internal.creation.bytebuddy.TypeCachingBytecodeGenerator.lambda$mockClass$0(TypeCachingBytecodeGenerator.java:78)
-	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:168)
-	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:399)
-	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:190)
-	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:410)
-	at org.mockito.internal.creation.bytebuddy.TypeCachingBytecodeGenerator.mockClass(TypeCachingBytecodeGenerator.java:75)
-	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.createMockType(InlineDelegateByteBuddyMockMaker.java:396)
-	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.doCreateMock(InlineDelegateByteBuddyMockMaker.java:355)
-	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.createMock(InlineDelegateByteBuddyMockMaker.java:334)
-	at org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.createMock(InlineByteBuddyMockMaker.java:56)
-	at org.mockito.internal.util.MockUtil.createMock(MockUtil.java:99)
-	at org.mockito.internal.MockitoCore.mock(MockitoCore.java:88)
-	at org.mockito.Mockito.mock(Mockito.java:2101)
-	at org.mockito.Mockito.mock(Mockito.java:2016)
-	... 31 more
-Caused by: java.lang.IllegalArgumentException: Java 23 (67) is not supported by the current version of Byte Buddy which officially supports Java 21 (65) - update Byte Buddy or set net.bytebuddy.experimental as a VM property
-	at net.bytebuddy.utility.OpenedClassReader.of(OpenedClassReader.java:96)
-	at net.bytebuddy.dynamic.scaffold.TypeWriter$Default$ForInlining.create(TypeWriter.java:4011)
-	at net.bytebuddy.dynamic.scaffold.TypeWriter$Default.make(TypeWriter.java:2224)
-	at net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase$UsingTypeWriter.make(DynamicType.java:4055)
-	at net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase.make(DynamicType.java:3739)
-	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.transform(InlineBytecodeGenerator.java:402)
-	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:242)
-	at java.instrument/sun.instrument.TransformerManager.transform(TransformerManager.java:188)
-	at java.instrument/sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:610)
-	at java.instrument/sun.instrument.InstrumentationImpl.retransformClasses0(Native Method)
-	at java.instrument/sun.instrument.InstrumentationImpl.retransformClasses(InstrumentationImpl.java:225)
-	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.triggerRetransformation(InlineBytecodeGenerator.java:281)
-	... 46 more
-... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.aryan.SignupServletTest#testDuplicateUserSignup</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">Wanted but not invoked:
-httpServletRequest.setAttribute(
-    &quot;errorMessage&quot;,
-    &quot;Username or email already exists.&quot;
-);
--&gt; at com.aryan.SignupServletTest.testDuplicateUserSignup(SignupServletTest.java:55)
-
-However, there were exactly 4 interactions with this mock:
-httpServletRequest.getParameter(&quot;username&quot;);
--&gt; at com.aryan.SignupServlet.doPost(SignupServlet.java:18)
-
-httpServletRequest.getParameter(&quot;email&quot;);
--&gt; at com.aryan.SignupServlet.doPost(SignupServlet.java:19)
-
-httpServletRequest.getParameter(&quot;password&quot;);
--&gt; at com.aryan.SignupServlet.doPost(SignupServlet.java:20)
-
-httpServletRequest.getContextPath();
--&gt; at com.aryan.SignupServlet.doPost(SignupServlet.java:32)
-
-
-	at com.aryan.SignupServletTest.testDuplicateUserSignup(SignupServletTest.java:55)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.aryan.SignupServletTest#testValidSignup</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.mockito.exceptions.verification.ArgumentsAreDifferent: Argument(s) are different! Wanted:
-httpServletResponse.sendRedirect(
-    &quot;/login.jsp&quot;
-);
--&gt; at com.aryan.SignupServletTest.testValidSignup(SignupServletTest.java:35)
-Actual invocations have different arguments:
-httpServletResponse.sendRedirect(
-    &quot;null/login.jsp&quot;
-);
--&gt; at com.aryan.SignupServlet.doPost(SignupServlet.java:32)
-
-	at com.aryan.SignupServletTest.testValidSignup(SignupServletTest.java:35)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.aryan.DatabaseConnectionTest#testDatabaseConnection</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>MyTests</h2><h3 id="m0">com.aryan.DatabaseConnectionTest#testDatabaseConnection</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.aryan.LoginServletTest#testLoginSuccess</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.aryan.SignupServletTest#testSignup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

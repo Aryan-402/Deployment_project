@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="1.74" tests="4" errors="0" skipped="0" failures="3">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="2.821" tests="3" errors="0" skipped="0" failures="0">
   <properties>
-    <property name="java.specification.version" value="23"/>
+    <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/Users/aryanchoudhary/IdeaProjects/Deployment_project/target/test-classes:/Users/aryanchoudhary/IdeaProjects/Deployment_project/target/classes:/Users/aryanchoudhary/.m2/repository/javax/servlet/javax.servlet-api/4.0.1/javax.servlet-api-4.0.1.jar:/Users/aryanchoudhary/.m2/repository/com/mysql/mysql-connector-j/8.0.33/mysql-connector-j-8.0.33.jar:/Users/aryanchoudhary/.m2/repository/com/google/protobuf/protobuf-java/3.21.9/protobuf-java-3.21.9.jar:/Users/aryanchoudhary/.m2/repository/jstl/jstl/1.2/jstl-1.2.jar:/Users/aryanchoudhary/.m2/repository/org/testng/testng/7.10.2/testng-7.10.2.jar:/Users/aryanchoudhary/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/aryanchoudhary/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/aryanchoudhary/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/aryanchoudhary/.m2/repository/org/apache/maven/plugins/maven-surefire-plugin/3.5.2/maven-surefire-plugin-3.5.2.jar:/Users/aryanchoudhary/.m2/repository/org/apache/maven/surefire/surefire-api/3.5.2/surefire-api-3.5.2.jar:/Users/aryanchoudhary/.m2/repository/org/apache/maven/surefire/surefire-logger-api/3.5.2/surefire-logger-api-3.5.2.jar:/Users/aryanchoudhary/.m2/repository/org/apache/maven/surefire/surefire-shared-utils/3.5.2/surefire-shared-utils-3.5.2.jar:/Users/aryanchoudhary/.m2/repository/org/apache/maven/surefire/surefire-extensions-api/3.5.2/surefire-extensions-api-3.5.2.jar:/Users/aryanchoudhary/.m2/repository/org/apache/maven/surefire/maven-surefire-common/3.5.2/maven-surefire-common-3.5.2.jar:/Users/aryanchoudhary/.m2/repository/org/apache/maven/surefire/surefire-booter/3.5.2/surefire-booter-3.5.2.jar:/Users/aryanchoudhary/.m2/repository/org/apache/maven/surefire/surefire-extensions-spi/3.5.2/surefire-extensions-spi-3.5.2.jar:/Users/aryanchoudhary/.m2/repository/org/apache/maven/resolver/maven-resolver-util/1.4.1/maven-resolver-util-1.4.1.jar:/Users/aryanchoudhary/.m2/repository/org/apache/maven/resolver/maven-resolver-api/1.4.1/maven-resolver-api-1.4.1.jar:/Users/aryanchoudhary/.m2/repository/org/apache/maven/shared/maven-common-artifact-filters/3.4.0/maven-common-artifact-filters-3.4.0.jar:/Users/aryanchoudhary/.m2/repository/org/codehaus/plexus/plexus-java/1.3.0/plexus-java-1.3.0.jar:/Users/aryanchoudhary/.m2/repository/org/ow2/asm/asm/9.7/asm-9.7.jar:/Users/aryanchoudhary/.m2/repository/com/thoughtworks/qdox/qdox/2.1.0/qdox-2.1.0.jar:/Users/aryanchoudhary/.m2/repository/org/mockito/mockito-core/5.5.0/mockito-core-5.5.0.jar:/Users/aryanchoudhary/.m2/repository/net/bytebuddy/byte-buddy/1.14.6/byte-buddy-1.14.6.jar:/Users/aryanchoudhary/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.6/byte-buddy-agent-1.14.6.jar:/Users/aryanchoudhary/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:"/>
+    <property name="java.class.path" value="/Users/aryanchoudhary/IdeaProjects/Deployment_project/target/test-classes:/Users/aryanchoudhary/IdeaProjects/Deployment_project/target/classes:/Users/aryanchoudhary/.m2/repository/javax/servlet/javax.servlet-api/4.0.1/javax.servlet-api-4.0.1.jar:/Users/aryanchoudhary/.m2/repository/com/mysql/mysql-connector-j/8.0.33/mysql-connector-j-8.0.33.jar:/Users/aryanchoudhary/.m2/repository/com/google/protobuf/protobuf-java/3.21.9/protobuf-java-3.21.9.jar:/Users/aryanchoudhary/.m2/repository/jstl/jstl/1.2/jstl-1.2.jar:/Users/aryanchoudhary/.m2/repository/org/testng/testng/7.10.2/testng-7.10.2.jar:/Users/aryanchoudhary/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/aryanchoudhary/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/aryanchoudhary/.m2/repository/org/apache/maven/plugins/maven-surefire-plugin/3.5.2/maven-surefire-plugin-3.5.2.jar:/Users/aryanchoudhary/.m2/repository/org/apache/maven/surefire/surefire-api/3.5.2/surefire-api-3.5.2.jar:/Users/aryanchoudhary/.m2/repository/org/apache/maven/surefire/surefire-logger-api/3.5.2/surefire-logger-api-3.5.2.jar:/Users/aryanchoudhary/.m2/repository/org/apache/maven/surefire/surefire-shared-utils/3.5.2/surefire-shared-utils-3.5.2.jar:/Users/aryanchoudhary/.m2/repository/org/apache/maven/surefire/surefire-extensions-api/3.5.2/surefire-extensions-api-3.5.2.jar:/Users/aryanchoudhary/.m2/repository/org/apache/maven/surefire/maven-surefire-common/3.5.2/maven-surefire-common-3.5.2.jar:/Users/aryanchoudhary/.m2/repository/org/apache/maven/surefire/surefire-booter/3.5.2/surefire-booter-3.5.2.jar:/Users/aryanchoudhary/.m2/repository/org/apache/maven/surefire/surefire-extensions-spi/3.5.2/surefire-extensions-spi-3.5.2.jar:/Users/aryanchoudhary/.m2/repository/org/apache/maven/resolver/maven-resolver-util/1.4.1/maven-resolver-util-1.4.1.jar:/Users/aryanchoudhary/.m2/repository/org/apache/maven/resolver/maven-resolver-api/1.4.1/maven-resolver-api-1.4.1.jar:/Users/aryanchoudhary/.m2/repository/org/apache/maven/shared/maven-common-artifact-filters/3.4.0/maven-common-artifact-filters-3.4.0.jar:/Users/aryanchoudhary/.m2/repository/org/codehaus/plexus/plexus-java/1.3.0/plexus-java-1.3.0.jar:/Users/aryanchoudhary/.m2/repository/org/ow2/asm/asm/9.7/asm-9.7.jar:/Users/aryanchoudhary/.m2/repository/com/thoughtworks/qdox/qdox/2.1.0/qdox-2.1.0.jar:/Users/aryanchoudhary/.m2/repository/org/mockito/mockito-core/5.5.0/mockito-core-5.5.0.jar:/Users/aryanchoudhary/.m2/repository/net/bytebuddy/byte-buddy/1.14.6/byte-buddy-1.14.6.jar:/Users/aryanchoudhary/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.6/byte-buddy-agent-1.14.6.jar:/Users/aryanchoudhary/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/aryanchoudhary/.m2/repository/org/mindrot/jbcrypt/0.4/jbcrypt-0.4.jar:/Users/aryanchoudhary/.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.jar:/Users/aryanchoudhary/.m2/repository/org/slf4j/slf4j-simple/2.0.16/slf4j-simple-2.0.16.jar:"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.vendor.url" value="https://java.oracle.com/"/>
     <property name="user.timezone" value="Asia/Kolkata"/>
     <property name="os.name" value="Mac OS X"/>
-    <property name="java.vm.specification.version" value="23"/>
+    <property name="java.vm.specification.version" value="21"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
-    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-23.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/aryanchoudhary/IdeaProjects/Deployment_project/target/surefire/surefirebooter-20241231015551124_3.jar /Users/aryanchoudhary/IdeaProjects/Deployment_project/target/surefire 2024-12-31T01-55-50_917-jvmRun1 surefire-20241231015551124_1tmp surefire_0-20241231015551124_2tmp"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/aryanchoudhary/IdeaProjects/Deployment_project/target/surefire/surefirebooter-20250104000205721_3.jar /Users/aryanchoudhary/IdeaProjects/Deployment_project/target/surefire 2025-01-04T00-02-05_387-jvmRun1 surefire-20250104000205721_1tmp surefire_0-20250104000205721_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="/Users/aryanchoudhary/IdeaProjects/Deployment_project/target/test-classes:/Users/aryanchoudhary/IdeaProjects/Deployment_project/target/classes:/Users/aryanchoudhary/.m2/repository/javax/servlet/javax.servlet-api/4.0.1/javax.servlet-api-4.0.1.jar:/Users/aryanchoudhary/.m2/repository/com/mysql/mysql-connector-j/8.0.33/mysql-connector-j-8.0.33.jar:/Users/aryanchoudhary/.m2/repository/com/google/protobuf/protobuf-java/3.21.9/protobuf-java-3.21.9.jar:/Users/aryanchoudhary/.m2/repository/jstl/jstl/1.2/jstl-1.2.jar:/Users/aryanchoudhary/.m2/repository/org/testng/testng/7.10.2/testng-7.10.2.jar:/Users/aryanchoudhary/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/aryanchoudhary/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/aryanchoudhary/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/aryanchoudhary/.m2/repository/org/apache/maven/plugins/maven-surefire-plugin/3.5.2/maven-surefire-plugin-3.5.2.jar:/Users/aryanchoudhary/.m2/repository/org/apache/maven/surefire/surefire-api/3.5.2/surefire-api-3.5.2.jar:/Users/aryanchoudhary/.m2/repository/org/apache/maven/surefire/surefire-logger-api/3.5.2/surefire-logger-api-3.5.2.jar:/Users/aryanchoudhary/.m2/repository/org/apache/maven/surefire/surefire-shared-utils/3.5.2/surefire-shared-utils-3.5.2.jar:/Users/aryanchoudhary/.m2/repository/org/apache/maven/surefire/surefire-extensions-api/3.5.2/surefire-extensions-api-3.5.2.jar:/Users/aryanchoudhary/.m2/repository/org/apache/maven/surefire/maven-surefire-common/3.5.2/maven-surefire-common-3.5.2.jar:/Users/aryanchoudhary/.m2/repository/org/apache/maven/surefire/surefire-booter/3.5.2/surefire-booter-3.5.2.jar:/Users/aryanchoudhary/.m2/repository/org/apache/maven/surefire/surefire-extensions-spi/3.5.2/surefire-extensions-spi-3.5.2.jar:/Users/aryanchoudhary/.m2/repository/org/apache/maven/resolver/maven-resolver-util/1.4.1/maven-resolver-util-1.4.1.jar:/Users/aryanchoudhary/.m2/repository/org/apache/maven/resolver/maven-resolver-api/1.4.1/maven-resolver-api-1.4.1.jar:/Users/aryanchoudhary/.m2/repository/org/apache/maven/shared/maven-common-artifact-filters/3.4.0/maven-common-artifact-filters-3.4.0.jar:/Users/aryanchoudhary/.m2/repository/org/codehaus/plexus/plexus-java/1.3.0/plexus-java-1.3.0.jar:/Users/aryanchoudhary/.m2/repository/org/ow2/asm/asm/9.7/asm-9.7.jar:/Users/aryanchoudhary/.m2/repository/com/thoughtworks/qdox/qdox/2.1.0/qdox-2.1.0.jar:/Users/aryanchoudhary/.m2/repository/org/mockito/mockito-core/5.5.0/mockito-core-5.5.0.jar:/Users/aryanchoudhary/.m2/repository/net/bytebuddy/byte-buddy/1.14.6/byte-buddy-1.14.6.jar:/Users/aryanchoudhary/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.6/byte-buddy-agent-1.14.6.jar:/Users/aryanchoudhary/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:"/>
+    <property name="surefire.test.class.path" value="/Users/aryanchoudhary/IdeaProjects/Deployment_project/target/test-classes:/Users/aryanchoudhary/IdeaProjects/Deployment_project/target/classes:/Users/aryanchoudhary/.m2/repository/javax/servlet/javax.servlet-api/4.0.1/javax.servlet-api-4.0.1.jar:/Users/aryanchoudhary/.m2/repository/com/mysql/mysql-connector-j/8.0.33/mysql-connector-j-8.0.33.jar:/Users/aryanchoudhary/.m2/repository/com/google/protobuf/protobuf-java/3.21.9/protobuf-java-3.21.9.jar:/Users/aryanchoudhary/.m2/repository/jstl/jstl/1.2/jstl-1.2.jar:/Users/aryanchoudhary/.m2/repository/org/testng/testng/7.10.2/testng-7.10.2.jar:/Users/aryanchoudhary/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/aryanchoudhary/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/aryanchoudhary/.m2/repository/org/apache/maven/plugins/maven-surefire-plugin/3.5.2/maven-surefire-plugin-3.5.2.jar:/Users/aryanchoudhary/.m2/repository/org/apache/maven/surefire/surefire-api/3.5.2/surefire-api-3.5.2.jar:/Users/aryanchoudhary/.m2/repository/org/apache/maven/surefire/surefire-logger-api/3.5.2/surefire-logger-api-3.5.2.jar:/Users/aryanchoudhary/.m2/repository/org/apache/maven/surefire/surefire-shared-utils/3.5.2/surefire-shared-utils-3.5.2.jar:/Users/aryanchoudhary/.m2/repository/org/apache/maven/surefire/surefire-extensions-api/3.5.2/surefire-extensions-api-3.5.2.jar:/Users/aryanchoudhary/.m2/repository/org/apache/maven/surefire/maven-surefire-common/3.5.2/maven-surefire-common-3.5.2.jar:/Users/aryanchoudhary/.m2/repository/org/apache/maven/surefire/surefire-booter/3.5.2/surefire-booter-3.5.2.jar:/Users/aryanchoudhary/.m2/repository/org/apache/maven/surefire/surefire-extensions-spi/3.5.2/surefire-extensions-spi-3.5.2.jar:/Users/aryanchoudhary/.m2/repository/org/apache/maven/resolver/maven-resolver-util/1.4.1/maven-resolver-util-1.4.1.jar:/Users/aryanchoudhary/.m2/repository/org/apache/maven/resolver/maven-resolver-api/1.4.1/maven-resolver-api-1.4.1.jar:/Users/aryanchoudhary/.m2/repository/org/apache/maven/shared/maven-common-artifact-filters/3.4.0/maven-common-artifact-filters-3.4.0.jar:/Users/aryanchoudhary/.m2/repository/org/codehaus/plexus/plexus-java/1.3.0/plexus-java-1.3.0.jar:/Users/aryanchoudhary/.m2/repository/org/ow2/asm/asm/9.7/asm-9.7.jar:/Users/aryanchoudhary/.m2/repository/com/thoughtworks/qdox/qdox/2.1.0/qdox-2.1.0.jar:/Users/aryanchoudhary/.m2/repository/org/mockito/mockito-core/5.5.0/mockito-core-5.5.0.jar:/Users/aryanchoudhary/.m2/repository/net/bytebuddy/byte-buddy/1.14.6/byte-buddy-1.14.6.jar:/Users/aryanchoudhary/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.6/byte-buddy-agent-1.14.6.jar:/Users/aryanchoudhary/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/aryanchoudhary/.m2/repository/org/mindrot/jbcrypt/0.4/jbcrypt-0.4.jar:/Users/aryanchoudhary/.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.jar:/Users/aryanchoudhary/.m2/repository/org/slf4j/slf4j-simple/2.0.16/slf4j-simple-2.0.16.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/Users/aryanchoudhary"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.version.date" value="2024-09-17"/>
-    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-23.jdk/Contents/Home"/>
+    <property name="java.version.date" value="2024-10-15"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home"/>
     <property name="file.separator" value="/"/>
     <property name="basedir" value="/Users/aryanchoudhary/IdeaProjects/Deployment_project"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
@@ -30,10 +30,10 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/aryanchoudhary/IdeaProjects/Deployment_project/target/surefire/surefirebooter-20241231015551124_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/aryanchoudhary/IdeaProjects/Deployment_project/target/surefire/surefirebooter-20250104000205721_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="java.runtime.version" value="23+37-2369"/>
+    <property name="java.runtime.version" value="21.0.5+9-LTS-239"/>
     <property name="user.name" value="aryanchoudhary"/>
     <property name="stdout.encoding" value="UTF-8"/>
     <property name="path.separator" value=":"/>
@@ -44,7 +44,7 @@
     <property name="localRepository" value="/Users/aryanchoudhary/.m2/repository"/>
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="/var/folders/jh/rlqxyhtn1p1cwjb9pz5hvr880000gn/T/"/>
-    <property name="java.version" value="23"/>
+    <property name="java.version" value="21.0.5"/>
     <property name="user.dir" value="/Users/aryanchoudhary/IdeaProjects/Deployment_project"/>
     <property name="os.arch" value="x86_64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
@@ -53,218 +53,21 @@
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="stderr.encoding" value="UTF-8"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="java.vm.version" value="23+37-2369"/>
+    <property name="java.vm.version" value="21.0.5+9-LTS-239"/>
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="java.class.version" value="67.0"/>
+    <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="testDatabaseConnection" classname="com.aryan.DatabaseConnectionTest" time="0.359">
-    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
-SLF4J: Defaulting to no-operation (NOP) logger implementation
-SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-WARNING: A Java agent has been loaded dynamically (/Users/aryanchoudhary/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.6/byte-buddy-agent-1.14.6.jar)
+  <testcase name="testDatabaseConnection" classname="com.aryan.DatabaseConnectionTest" time="0.458">
+    <system-err><![CDATA[[main] WARN org.testng.xml.TestNGContentHandler - It is strongly recommended to add "<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >" at the top of the suite file [/Users/aryanchoudhary/IdeaProjects/Deployment_project/src/test/resources/testng.xml] otherwise TestNG may fail or not work as expected.
+]]></system-err>
+  </testcase>
+  <testcase name="testSignup" classname="com.aryan.SignupServletTest" time="1.671">
+    <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (/Users/aryanchoudhary/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.6/byte-buddy-agent-1.14.6.jar)
 WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
 WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
 WARNING: Dynamic loading of agents will be disallowed by default in a future release
 ]]></system-err>
   </testcase>
-  <testcase name="testValidLogin" classname="com.aryan.LoginServletTest" time="0.321">
-    <failure message="&#10;Mockito cannot mock this class: interface java.sql.Connection.&#10;&#10;If you&apos;re not sure why you&apos;re getting this error, please open an issue on GitHub.&#10;&#10;&#10;Java               : 23&#10;JVM vendor name    : Oracle Corporation&#10;JVM vendor version : 23+37-2369&#10;JVM name           : Java HotSpot(TM) 64-Bit Server VM&#10;JVM version        : 23+37-2369&#10;JVM info           : mixed mode, sharing&#10;OS name            : Mac OS X&#10;OS version         : 15.2&#10;&#10;&#10;You are seeing this disclaimer because Mockito is configured to create inlined mocks.&#10;You can learn about inline mocks and their limitations under item #39 of the Mockito class javadoc.&#10;&#10;Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [interface java.sql.Connection, interface java.sql.Wrapper, interface java.lang.AutoCloseable]" type="org.mockito.exceptions.base.MockitoException"><![CDATA[org.mockito.exceptions.base.MockitoException: 
-
-Mockito cannot mock this class: interface java.sql.Connection.
-
-If you're not sure why you're getting this error, please open an issue on GitHub.
-
-
-Java               : 23
-JVM vendor name    : Oracle Corporation
-JVM vendor version : 23+37-2369
-JVM name           : Java HotSpot(TM) 64-Bit Server VM
-JVM version        : 23+37-2369
-JVM info           : mixed mode, sharing
-OS name            : Mac OS X
-OS version         : 15.2
-
-
-You are seeing this disclaimer because Mockito is configured to create inlined mocks.
-You can learn about inline mocks and their limitations under item #39 of the Mockito class javadoc.
-
-Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [interface java.sql.Connection, interface java.sql.Wrapper, interface java.lang.AutoCloseable]
-	at com.aryan.LoginServletTest.testValidLogin(LoginServletTest.java:28)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
-Caused by: org.mockito.exceptions.base.MockitoException: Could not modify all classes [interface java.sql.Connection, interface java.sql.Wrapper, interface java.lang.AutoCloseable]
-	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:168)
-	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:399)
-	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:190)
-	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:410)
-	... 31 more
-Caused by: java.lang.IllegalStateException: 
-Byte Buddy could not instrument all classes within the mock's type hierarchy
-
-This problem should never occur for javac-compiled classes. This problem has been observed for classes that are:
- - Compiled by older versions of scalac
- - Classes that are part of the Android distribution
-	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.triggerRetransformation(InlineBytecodeGenerator.java:285)
-	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.mockClass(InlineBytecodeGenerator.java:218)
-	at org.mockito.internal.creation.bytebuddy.TypeCachingBytecodeGenerator.lambda$mockClass$0(TypeCachingBytecodeGenerator.java:78)
-	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:168)
-	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:399)
-	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:190)
-	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:410)
-	at org.mockito.internal.creation.bytebuddy.TypeCachingBytecodeGenerator.mockClass(TypeCachingBytecodeGenerator.java:75)
-	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.createMockType(InlineDelegateByteBuddyMockMaker.java:396)
-	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.doCreateMock(InlineDelegateByteBuddyMockMaker.java:355)
-	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.createMock(InlineDelegateByteBuddyMockMaker.java:334)
-	at org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.createMock(InlineByteBuddyMockMaker.java:56)
-	at org.mockito.internal.util.MockUtil.createMock(MockUtil.java:99)
-	at org.mockito.internal.MockitoCore.mock(MockitoCore.java:88)
-	at org.mockito.Mockito.mock(Mockito.java:2101)
-	at org.mockito.Mockito.mock(Mockito.java:2016)
-	... 31 more
-Caused by: java.lang.IllegalArgumentException: Java 23 (67) is not supported by the current version of Byte Buddy which officially supports Java 21 (65) - update Byte Buddy or set net.bytebuddy.experimental as a VM property
-	at net.bytebuddy.utility.OpenedClassReader.of(OpenedClassReader.java:96)
-	at net.bytebuddy.dynamic.scaffold.TypeWriter$Default$ForInlining.create(TypeWriter.java:4011)
-	at net.bytebuddy.dynamic.scaffold.TypeWriter$Default.make(TypeWriter.java:2224)
-	at net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase$UsingTypeWriter.make(DynamicType.java:4055)
-	at net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase.make(DynamicType.java:3739)
-	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.transform(InlineBytecodeGenerator.java:402)
-	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:242)
-	at java.instrument/sun.instrument.TransformerManager.transform(TransformerManager.java:188)
-	at java.instrument/sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:610)
-	at java.instrument/sun.instrument.InstrumentationImpl.retransformClasses0(Native Method)
-	at java.instrument/sun.instrument.InstrumentationImpl.retransformClasses(InstrumentationImpl.java:225)
-	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.triggerRetransformation(InlineBytecodeGenerator.java:281)
-	... 46 more
-]]></failure>
-  </testcase>
-  <testcase name="testDuplicateUserSignup" classname="com.aryan.SignupServletTest" time="0.054">
-    <failure message="&#10;Wanted but not invoked:&#10;httpServletRequest.setAttribute(&#10;    &quot;errorMessage&quot;,&#10;    &quot;Username or email already exists.&quot;&#10;);&#10;-&gt; at com.aryan.SignupServletTest.testDuplicateUserSignup(SignupServletTest.java:55)&#10;&#10;However, there were exactly 4 interactions with this mock:&#10;httpServletRequest.getParameter(&quot;username&quot;);&#10;-&gt; at com.aryan.SignupServlet.doPost(SignupServlet.java:18)&#10;&#10;httpServletRequest.getParameter(&quot;email&quot;);&#10;-&gt; at com.aryan.SignupServlet.doPost(SignupServlet.java:19)&#10;&#10;httpServletRequest.getParameter(&quot;password&quot;);&#10;-&gt; at com.aryan.SignupServlet.doPost(SignupServlet.java:20)&#10;&#10;httpServletRequest.getContextPath();&#10;-&gt; at com.aryan.SignupServlet.doPost(SignupServlet.java:32)&#10;&#10;" type="Wanted but not invoked"><![CDATA[Wanted but not invoked:
-httpServletRequest.setAttribute(
-    "errorMessage",
-    "Username or email already exists."
-);
--> at com.aryan.SignupServletTest.testDuplicateUserSignup(SignupServletTest.java:55)
-
-However, there were exactly 4 interactions with this mock:
-httpServletRequest.getParameter("username");
--> at com.aryan.SignupServlet.doPost(SignupServlet.java:18)
-
-httpServletRequest.getParameter("email");
--> at com.aryan.SignupServlet.doPost(SignupServlet.java:19)
-
-httpServletRequest.getParameter("password");
--> at com.aryan.SignupServlet.doPost(SignupServlet.java:20)
-
-httpServletRequest.getContextPath();
--> at com.aryan.SignupServlet.doPost(SignupServlet.java:32)
-
-
-	at com.aryan.SignupServletTest.testDuplicateUserSignup(SignupServletTest.java:55)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
-]]></failure>
-  </testcase>
-  <testcase name="testValidSignup" classname="com.aryan.SignupServletTest" time="0.025">
-    <failure message="Argument(s) are different! Wanted:&#10;httpServletResponse.sendRedirect(&#10;    &quot;/login.jsp&quot;&#10;);&#10;-&gt; at com.aryan.SignupServletTest.testValidSignup(SignupServletTest.java:35)&#10;Actual invocations have different arguments:&#10;httpServletResponse.sendRedirect(&#10;    &quot;null/login.jsp&quot;&#10;);&#10;-&gt; at com.aryan.SignupServlet.doPost(SignupServlet.java:32)&#10;" type="org.mockito.exceptions.verification.ArgumentsAreDifferent"><![CDATA[org.mockito.exceptions.verification.ArgumentsAreDifferent: 
-Argument(s) are different! Wanted:
-httpServletResponse.sendRedirect(
-    "/login.jsp"
-);
--> at com.aryan.SignupServletTest.testValidSignup(SignupServletTest.java:35)
-Actual invocations have different arguments:
-httpServletResponse.sendRedirect(
-    "null/login.jsp"
-);
--> at com.aryan.SignupServlet.doPost(SignupServlet.java:32)
-
-	at com.aryan.SignupServletTest.testValidSignup(SignupServletTest.java:35)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
-]]></failure>
-  </testcase>
+  <testcase name="testLoginSuccess" classname="com.aryan.LoginServletTest" time="0.163"/>
 </testsuite>
