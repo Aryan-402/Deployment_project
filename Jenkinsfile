@@ -18,19 +18,36 @@ pipeline {
             }
         }
         stage('Deploy') {
-    steps {
-        // Deploy to Tomcat server
-        sh '''
-        cp target/UserAuthWeb-1.0-SNAPSHOT.war /Applications/apache-tomcat-9.0.95/webapps
-        '''
-        // Start Tomcat server (no need to shut it down first)
-        sh '''
-        /Applications/apache-tomcat-9.0.95/bin/startup.sh
-        '''
-    }
-}
-
-
+            steps {
+                // Deploy to Tomcat server
+                sh '''
+                cp target/UserAuthWeb-1.0-SNAPSHOT.war /Applications/apache-tomcat-9.0.95/webapps
+                '''
+                // Start Tomcat server (no need to shut it down first)
+                sh '''
+                /Applications/apache-tomcat-9.0.95/bin/startup.sh
+                '''
+            }
+        }
+        stage('Send Email') {
+            steps {
+                script {
+                    // Email notification
+                    emailext(
+                        subject: 'Deployment Report',
+                        body: '''
+                            <p>Hi Team,</p>
+                            <p>Please find the attached emailable-report for details of the deployment.</p>
+                            <p>Regards,</p>
+                            <p>Jenkins</p>
+                        ''',
+                        attachLog: true,
+                        attachmentsPattern: '**/target/surefire-reports/emailable-report.html',
+                        to: 'aryanbhaskar003@gmail.com'
+                    )
+                }
+            }
+        }
     }
     post {
         success {
