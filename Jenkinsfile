@@ -43,7 +43,8 @@ pipeline {
                         ''',
                         attachLog: true,
                         attachmentsPattern: '**/target/surefire-reports/emailable-report.html',
-                        to: 'aryanbhaskar003@gmail.com'
+                        to: 'aryanbhaskar003@gmail.com',
+                        replyTo: 'jenkinsreport@stabforge.com'
                     )
                 }
             }
