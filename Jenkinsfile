@@ -36,10 +36,16 @@ pipeline {
                     emailext(
                         subject: 'Deployment Report',
                         body: '''
+                        <html>
+                        <head>
+                        </head>
+                        <body>
                             <p>Hi Team,</p>
                             <p>Please find the attached emailable-report for details of the deployment.</p>
                             <p>Regards,</p>
                             <p>Jenkins</p>
+                            </body>
+                            </html>
                         ''',
                         attachLog: true,
                         attachmentsPattern: '**/target/surefire-reports/emailable-report.html',
