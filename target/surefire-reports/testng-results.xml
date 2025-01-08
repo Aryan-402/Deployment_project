@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-04T00:02:06 IST" name="MySuite" finished-at="2025-01-04T00:02:08 IST" duration-ms="2333">
+  <suite started-at="2025-01-09T00:10:39 IST" name="MySuite" finished-at="2025-01-09T00:10:40 IST" duration-ms="1577">
     <groups>
     </groups>
-    <test started-at="2025-01-04T00:02:06 IST" name="MyTests" finished-at="2025-01-04T00:02:08 IST" duration-ms="2333">
+    <test started-at="2025-01-09T00:10:39 IST" name="MyTests" finished-at="2025-01-09T00:10:40 IST" duration-ms="1577">
       <class name="com.aryan.DatabaseConnectionTest">
-        <test-method signature="testDatabaseConnection()[pri:0, instance:com.aryan.DatabaseConnectionTest@23986957]" started-at="2025-01-04T00:02:06 IST" name="testDatabaseConnection" finished-at="2025-01-04T00:02:06 IST" duration-ms="457" status="PASS">
+        <test-method signature="testDatabaseConnection()[pri:0, instance:com.aryan.DatabaseConnectionTest@72a7c7e0]" started-at="2025-01-09T00:10:39 IST" name="testDatabaseConnection" finished-at="2025-01-09T00:10:39 IST" duration-ms="338" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDatabaseConnection -->
       </class> <!-- com.aryan.DatabaseConnectionTest -->
       <class name="com.aryan.LoginServletTest">
-        <test-method signature="testLoginSuccess()[pri:0, instance:com.aryan.LoginServletTest@7692d9cc]" started-at="2025-01-04T00:02:08 IST" name="testLoginSuccess" finished-at="2025-01-04T00:02:08 IST" duration-ms="162" status="PASS">
+        <test-method signature="testLoginSuccess()[pri:0, instance:com.aryan.LoginServletTest@34b7ac2f]" started-at="2025-01-09T00:10:40 IST" name="testLoginSuccess" finished-at="2025-01-09T00:10:40 IST" duration-ms="106" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginSuccess -->
       </class> <!-- com.aryan.LoginServletTest -->
       <class name="com.aryan.SignupServletTest">
-        <test-method signature="testSignup()[pri:0, instance:com.aryan.SignupServletTest@2a32de6c]" started-at="2025-01-04T00:02:06 IST" name="testSignup" finished-at="2025-01-04T00:02:08 IST" duration-ms="1669" status="PASS">
+        <test-method signature="testSignup()[pri:0, instance:com.aryan.SignupServletTest@6e4784bc]" started-at="2025-01-09T00:10:39 IST" name="testSignup" finished-at="2025-01-09T00:10:40 IST" duration-ms="1101" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSignup -->

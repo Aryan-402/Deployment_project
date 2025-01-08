@@ -1,3 +1,6 @@
-com/aryan/LoginServletTest.class
+com/aryan/CucumberSignupTest.class
 com/aryan/SignupServletTest.class
 com/aryan/DatabaseConnectionTest.class
+com/aryan/CucumberDatabaseTest.class
+com/aryan/LoginServletTest.class
+com/aryan/CucumberLoginTest.class

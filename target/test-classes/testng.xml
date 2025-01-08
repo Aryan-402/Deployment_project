@@ -5,6 +5,9 @@
             <class name="com.aryan.DatabaseConnectionTest" />
             <class name="com.aryan.SignupServletTest" />
             <class name="com.aryan.LoginServletTest" />
+            <class name="com.aryan.CucumberDatabaseTest" />
+            <class name="com.aryan.CucumberSignupTest" />
+            <class name="com.aryan.CucumberLoginTest" />
             <!-- Add more test classes here -->
         </classes>
     </test>
