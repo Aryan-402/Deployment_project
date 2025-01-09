@@ -2,24 +2,44 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-09T00:10:39 IST" name="MySuite" finished-at="2025-01-09T00:10:40 IST" duration-ms="1577">
+  <suite started-at="2025-01-09T10:37:40 IST" name="MySuite" finished-at="2025-01-09T10:37:42 IST" duration-ms="2125">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.aryan.TestRunner@393671df]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-01-09T00:10:39 IST" name="MyTests" finished-at="2025-01-09T00:10:40 IST" duration-ms="1577">
+    <test started-at="2025-01-09T10:37:40 IST" name="MyTests" finished-at="2025-01-09T10:37:42 IST" duration-ms="2125">
       <class name="com.aryan.DatabaseConnectionTest">
-        <test-method signature="testDatabaseConnection()[pri:0, instance:com.aryan.DatabaseConnectionTest@72a7c7e0]" started-at="2025-01-09T00:10:39 IST" name="testDatabaseConnection" finished-at="2025-01-09T00:10:39 IST" duration-ms="338" status="PASS">
+        <test-method signature="testDatabaseConnection()[pri:0, instance:com.aryan.DatabaseConnectionTest@50a638b5]" started-at="2025-01-09T10:37:40 IST" name="testDatabaseConnection" finished-at="2025-01-09T10:37:40 IST" duration-ms="312" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDatabaseConnection -->
       </class> <!-- com.aryan.DatabaseConnectionTest -->
+      <class name="com.aryan.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.aryan.TestRunner@393671df]" started-at="2025-01-09T10:37:42 IST" name="setUpClass" finished-at="2025-01-09T10:37:42 IST" duration-ms="376" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@6b09ce57]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.aryan.TestRunner@393671df]" started-at="2025-01-09T10:37:42 IST" name="tearDownClass" finished-at="2025-01-09T10:37:42 IST" duration-ms="31" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.aryan.TestRunner -->
       <class name="com.aryan.LoginServletTest">
-        <test-method signature="testLoginSuccess()[pri:0, instance:com.aryan.LoginServletTest@34b7ac2f]" started-at="2025-01-09T00:10:40 IST" name="testLoginSuccess" finished-at="2025-01-09T00:10:40 IST" duration-ms="106" status="PASS">
+        <test-method signature="testLoginSuccess()[pri:0, instance:com.aryan.LoginServletTest@4facf68f]" started-at="2025-01-09T10:37:42 IST" name="testLoginSuccess" finished-at="2025-01-09T10:37:42 IST" duration-ms="125" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginSuccess -->
       </class> <!-- com.aryan.LoginServletTest -->
       <class name="com.aryan.SignupServletTest">
-        <test-method signature="testSignup()[pri:0, instance:com.aryan.SignupServletTest@6e4784bc]" started-at="2025-01-09T00:10:39 IST" name="testSignup" finished-at="2025-01-09T00:10:40 IST" duration-ms="1101" status="PASS">
+        <test-method signature="testSignup()[pri:0, instance:com.aryan.SignupServletTest@4ac3c60d]" started-at="2025-01-09T10:37:40 IST" name="testSignup" finished-at="2025-01-09T10:37:42 IST" duration-ms="1251" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSignup -->

@@ -15,98 +15,135 @@
   </properties>
 
   <dependencies>
+    <!-- Existing dependencies kept intact -->
+
+    <!-- Servlet API (for servlet-based applications) -->
     <dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>javax.servlet-api</artifactId>
       <version>4.0.1</version>
       <scope>provided</scope>
     </dependency>
+
+    <!-- MySQL Connector (for database connection) -->
     <dependency>
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
       <version>8.0.33</version>
     </dependency>
+
+    <!-- JSTL (for JSP/Servlet-based web apps) -->
     <dependency>
       <groupId>jstl</groupId>
       <artifactId>jstl</artifactId>
       <version>1.2</version>
     </dependency>
+
+    <!-- TestNG for running tests -->
     <dependency>
       <groupId>org.testng</groupId>
       <artifactId>testng</artifactId>
       <version>7.10.2</version>
-      <scope>compile</scope>
+      <scope>test</scope>
     </dependency>
-    <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
-    <dependency>
-      <groupId>org.apache.maven.plugins</groupId>
-      <artifactId>maven-surefire-plugin</artifactId>
-      <version>3.5.2</version>
-    </dependency>
-    <!-- Mockito -->
+
+    <!-- Mockito for mocking dependencies in tests -->
     <dependency>
       <groupId>org.mockito</groupId>
       <artifactId>mockito-core</artifactId>
       <version>5.5.0</version>
       <scope>test</scope>
     </dependency>
+
+    <!-- jbcrypt for password hashing -->
     <dependency>
       <groupId>org.mindrot</groupId>
       <artifactId>jbcrypt</artifactId>
       <version>0.4</version>
     </dependency>
-    <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
+
+    <!-- SLF4J (Logging) -->
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-api</artifactId>
       <version>2.0.16</version>
     </dependency>
-
-
-    <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-simple -->
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-simple</artifactId>
       <version>2.0.16</version>
       <scope>test</scope>
     </dependency>
-    <!-- Cucumber Java -->
+
+    <!-- Cucumber dependencies for TestNG -->
     <dependency>
       <groupId>io.cucumber</groupId>
       <artifactId>cucumber-java</artifactId>
       <version>7.14.0</version>
     </dependency>
-
-    <!-- Cucumber TestNG -->
     <dependency>
       <groupId>io.cucumber</groupId>
       <artifactId>cucumber-testng</artifactId>
       <version>7.14.0</version>
     </dependency>
 
-    <!-- Cucumber JUnit (Optional, if not using TestNG) -->
-    <dependency>
-      <groupId>io.cucumber</groupId>
-      <artifactId>cucumber-junit</artifactId>
-      <version>7.14.0</version>
-    </dependency>
-
-    <!-- Selenium WebDriver (if used in tests) -->
+    <!-- Selenium WebDriver for automation -->
+    <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-java</artifactId>
-      <version>4.12.0</version>
+      <version>4.26.0</version>
     </dependency>
+
+    <!-- WebDriverManager for handling browser driver binaries -->
+    <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+    <dependency>
+      <groupId>io.github.bonigarcia</groupId>
+      <artifactId>webdrivermanager</artifactId>
+      <version>5.9.2</version>
+    </dependency>
+
+
+    <!-- Cucumber Spring (optional, if using Spring with Cucumber) -->
+
+
+    <!-- Cucumber Reporting (correct artifact for HTML reports) -->
+    <!-- https://mvnrepository.com/artifact/net.masterthought/cucumber-reporting -->
+    <dependency>
+      <groupId>net.masterthought</groupId>
+      <artifactId>cucumber-reporting</artifactId>
+      <version>5.8.4</version>
+    </dependency>
+
+
+    <!-- Additional Cucumber-related dependencies -->
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-core</artifactId>
+      <version>7.14.0</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-html -->
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-html</artifactId>
+      <version>0.2.7</version>
+    </dependency>
+
 
   </dependencies>
 
   <build>
     <plugins>
+      <!-- Existing plugins kept intact -->
+
+      <!-- Maven WAR Plugin (for packaging the web app) -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-war-plugin</artifactId>
         <version>3.3.1</version>
       </plugin>
+
+      <!-- Maven Compiler Plugin (Java 17 support) -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -116,13 +153,15 @@
           <target>17</target>
         </configuration>
       </plugin>
+
+      <!-- Maven Surefire Plugin for running TestNG tests -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
         <version>3.0.0-M9</version>
         <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
+            <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>  <!-- Path to TestNG suite -->
           </suiteXmlFiles>
         </configuration>
       </plugin>

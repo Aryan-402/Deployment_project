@@ -1,6 +1,5 @@
 /Users/aryanchoudhary/IdeaProjects/Deployment_project/src/test/java/com/aryan/SignupServletTest.java
 /Users/aryanchoudhary/IdeaProjects/Deployment_project/src/test/java/com/aryan/LoginServletTest.java
 /Users/aryanchoudhary/IdeaProjects/Deployment_project/src/test/java/com/aryan/DatabaseConnectionTest.java
-/Users/aryanchoudhary/IdeaProjects/Deployment_project/src/test/java/com/aryan/CucumberSignupTest.java
-/Users/aryanchoudhary/IdeaProjects/Deployment_project/src/test/java/com/aryan/CucumberDatabaseTest.java
-/Users/aryanchoudhary/IdeaProjects/Deployment_project/src/test/java/com/aryan/CucumberLoginTest.java
+/Users/aryanchoudhary/IdeaProjects/Deployment_project/src/test/java/com/aryan/TestRunner.java
+/Users/aryanchoudhary/IdeaProjects/Deployment_project/src/test/java/com/aryan/LoginSignupTests.java
