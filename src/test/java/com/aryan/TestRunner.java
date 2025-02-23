@@ -1,15 +1,14 @@
 package com.aryan;
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+import org.junit.runner.RunWith;
 
-import io.cucumber.testng.CucumberOptions;
-import io.cucumber.testng.AbstractTestNGCucumberTests;
-
+@RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "src/test/resources",  // Path to your feature files
-        glue = {"com.aryan"},                      // Step definitions package
-        plugin = {"pretty", "html:target/cucumber-reports.html"},  // Plugins for reports
-        monochrome = true,  // Makes console output readable
-        tags = "@smoke"  // Optional: specify tags for which tests to run
+        features = "src/test/resources", // Path to your feature files directory
+        glue = "com.aryan"         // Package containing your step definition classes
+//        plugin = {"pretty", "html:target/cucumber-reports"}
 )
-public class TestRunner extends AbstractTestNGCucumberTests {
-    // This class will run your Cucumber tests using TestNG
+public class TestRunner {
 }
+
