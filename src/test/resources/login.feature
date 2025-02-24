@@ -6,6 +6,6 @@ Feature: Login functionality
     And I click the Login button
     Then I should be redirected to the welcome page
     Examples:
-      | username | password |
-      | "Aryan"  | "123456" |
+      | username | password   |
+      | "testuser"  | "password123" |
 
