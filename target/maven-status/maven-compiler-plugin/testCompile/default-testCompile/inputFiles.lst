@@ -1,6 +1,6 @@
+/Users/aryanchoudhary/IdeaProjects/Deployment_project/src/test/java/runners/TestRunner.java
 /Users/aryanchoudhary/IdeaProjects/Deployment_project/src/test/java/com/aryan/SignupServletTest.java
 /Users/aryanchoudhary/IdeaProjects/Deployment_project/src/test/java/com/aryan/LoginServletTest.java
 /Users/aryanchoudhary/IdeaProjects/Deployment_project/src/test/java/com/aryan/DatabaseConnectionTest.java
-/Users/aryanchoudhary/IdeaProjects/Deployment_project/src/test/java/com/aryan/SignupSteps.java
-/Users/aryanchoudhary/IdeaProjects/Deployment_project/src/test/java/com/aryan/LoginSteps.java
-/Users/aryanchoudhary/IdeaProjects/Deployment_project/src/test/java/com/aryan/TestRunner.java
+/Users/aryanchoudhary/IdeaProjects/Deployment_project/src/test/java/stepDefinitions/SignupSteps.java
+/Users/aryanchoudhary/IdeaProjects/Deployment_project/src/test/java/stepDefinitions/LoginSteps.java

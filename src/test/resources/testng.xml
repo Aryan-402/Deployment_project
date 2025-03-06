@@ -5,7 +5,7 @@
             <class name="com.aryan.DatabaseConnectionTest" />
             <class name="com.aryan.SignupServletTest" />
             <class name="com.aryan.LoginServletTest" />
-            <class name="com.aryan.TestRunner"/>
+            <class name="runners.TestRunner"/>
             <!-- Add more test classes here -->
         </classes>
     </test>
