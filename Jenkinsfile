@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment {
         MAVEN_HOME = '/usr/local/opt/maven/libexec'  // Mac-specific Maven path
-        PATH = "${MAVEN_HOME}/bin:${env.PATH}"
+        PATH = "${MAVEN_HOME}/bin:${env.PATH}"//path
     }
     stages {
         stage('Checkout') {
