@@ -69,7 +69,7 @@ pipeline {
             echo 'Deployment and post-deployment tests were successful!'
         }
         failure {
-            echo 'Something went wrong!'
+            echo 'Something went wrong!'//message
         }
     }
 }
